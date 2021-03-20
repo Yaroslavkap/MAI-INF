@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+for c in "$1"/Makefile*; do
+    
+    echo "$c" | sed  's!*!:файл с именем "Makefile*" не найден!' | sed 's!/!|!g' 
+    
+done
